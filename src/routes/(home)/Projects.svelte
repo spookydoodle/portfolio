@@ -2,14 +2,17 @@
     import type { ProjectsDataItem } from "./data";
 
     let { data }: { data: ProjectsDataItem[] } = $props();
-    
 </script>
 
-<div id="projects">
+<div id="projects" class="container">
     {#each data as item}
         <a href={item.href}>
             <div class="button">
-                <img src={item.imgSrc} alt={`Project ${item.title} image`} draggable="false" />
+                <img
+                    src={item.imgSrc}
+                    alt={`Project ${item.title} image`}
+                    draggable="false"
+                />
                 <h3 class="title">{item.title}</h3>
             </div>
         </a>
@@ -17,7 +20,7 @@
 </div>
 
 <style>
-    #projects {
+    .container {
         display: flex;
         row-gap: 30px;
         column-gap: 30px;
@@ -29,25 +32,25 @@
         min-height: 100vh;
     }
 
-    #projects .button {
+    .button {
         position: relative;
         border-radius: 50%;
-        width: max(20vw, 200px);
-        height: max(20vw, 200px);
+        width: 200px;
+        height: 200px;
         box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-items: center;
-        transition: transform .15s ease-in;
+        transition: transform 0.15s ease-in;
     }
 
-    #projects .button:hover {
+    .button:hover {
         box-shadow: -1px 1px 20px var(--color-secondary);
         transform: scale(1.1);
-        transition: transform .1s ease-out;
+        transition: transform 0.1s ease-out;
     }
 
-    #projects .button img {
+    .button img {
         box-sizing: border-box;
         width: 100%;
         height: 100%;
@@ -57,11 +60,11 @@
         user-select: none;
     }
 
-    #projects .button:not(:hover) img {
-        filter: brightness(75%)
+    .button:not(:hover) img {
+        filter: brightness(75%);
     }
 
-    #projects .button .title {
+    .button .title {
         position: absolute;
         left: 0;
         right: 0;
@@ -69,9 +72,28 @@
         color: var(--color-text-white);
     }
 
-    #projects .button:hover .title {
+    .button:hover .title {
         font-weight: bold;
         color: var(--color-secondary);
         text-shadow: var(--color-text-black) 0 0 8px;
+    }
+
+    @media only screen and (min-width: 500px) {
+        .button {
+            width: 275px;
+            height: 275px;
+        }
+    }
+    @media only screen and (min-width: 800px) {
+        .button {
+            width: 350px;
+            height: 350px;
+        }
+    }
+    @media only screen and (min-width: 1800px) {
+        .button {
+            width: 450px;
+            height: 450px;
+        }
     }
 </style>

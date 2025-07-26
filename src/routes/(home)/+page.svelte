@@ -13,5 +13,5 @@
 <Header data={intro} />
 <About data={about} />
 <Timeline data={timeline} />
-<Projects data={projects} />
 <Skills data={skills} />
+<Projects data={projects} />

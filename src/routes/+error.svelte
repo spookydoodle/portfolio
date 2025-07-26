@@ -28,7 +28,7 @@
 <style>
     .container {
         min-height: 100vh;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
         background-color: var(--color-background-dark);
         display: flex;

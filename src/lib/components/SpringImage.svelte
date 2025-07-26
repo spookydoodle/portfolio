@@ -163,6 +163,8 @@
 <style>
     .outer {
         position: relative;
+        width: 100%;
+        height: 100%;
     }
 
     .outer .hidden-text {
@@ -175,6 +177,7 @@
         display: block;;
         font-size: 24px;
         opacity: 0;
+        user-select: none;
     }
     .outer .hidden-text.entered {
         animation: show 0.2s 1.4s ease-in forwards;

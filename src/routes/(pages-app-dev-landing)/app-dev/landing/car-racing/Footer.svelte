@@ -51,12 +51,12 @@
         right: 0;
         z-index: 1;
         border-top: 40px solid black;
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
+        border-left: 50% solid transparent;
+        border-right: 50% solid transparent;
     }
 
     :global(.footer .footer-img img) {
-        width: 100vw;
+        width: 100%;
         height: 640px;
         position: relative;
         opacity: .6;

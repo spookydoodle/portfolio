@@ -110,8 +110,8 @@
     }
 
     .loading {
-        width: 100vw;
-        height: 100vw;
+        width: 100%;
+        height: 100%;
         background-color: black;
     }
 
@@ -121,7 +121,7 @@
     }
 
     .bg-container {
-        width: 100vw;
+        width: 100%;
         height: 110vh;
         padding-bottom: 10vh;
         position: relative;
@@ -164,7 +164,6 @@
         text-align: center;
         text-transform: uppercase;
         font-family: Dela Gothic One;
-        word-spacing: 50vw;
         font-size: 36px;
     }
 

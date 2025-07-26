@@ -73,7 +73,7 @@
             "header"
             "main"
             "footer";
-        grid-template-columns: 100vw;
+        grid-template-columns: 100%;
         grid-template-rows: var(--header-height) auto max-content;
         background-color: var(--color-background-light);
         color: var(--color-primary);
@@ -122,7 +122,7 @@
                 "header header"
                 "main aside"
                 "footer aside";
-        grid-template-columns: calc(100vw - 220px) 220px;
+        grid-template-columns: calc(100% - 220px) 220px;
         }
         :global(.pages-layout .aside) {
             display: initial;

@@ -11,6 +11,7 @@
     } from "$components";
     import Toasts from "$components/layout/Toasts.svelte";
     import { handleAnchorClick } from "$utils/navigation";
+    import { MainAnchors } from "$utils/pages";
 
     let { children }: { children: Snippet } = $props();
     let showScrollToTopIcon = $state<boolean>(false);
@@ -18,11 +19,11 @@
     let offsetHandle = $state(100);
 
     const navItems: { title: string; href: string }[] = [
-        { title: "Home", href: "#home" },
-        { title: "About", href: "#about" },
-        { title: "Timeline", href: "#timeline" },
-        { title: "Projects", href: "#projects" },
-        { title: "Skills", href: "#skills" },
+        { title: "Home", href: "#" + MainAnchors.Intro },
+        { title: "About", href: "#" + MainAnchors.About},
+        { title: "Timeline", href: "#" + MainAnchors.Timeline },
+        { title: "Skills", href: "#" + MainAnchors.Skills },
+        { title: "Projects", href: "#" + MainAnchors.Projects },
     ];
 
     onMount(() => {
@@ -134,7 +135,7 @@
             "header"
             "main"
             "footer";
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: var(--header-height) auto max-content;
         background-color: var(--color-background-dark);
     }

@@ -10,7 +10,7 @@
         <h2 class="header">Timeline</h2>
     </SlideInViewport>
     <div class="content">
-        {#each data as { period, title, company, department, caption, avatar, avatarHiddenText, list, snippet }}
+        {#each data as { period, title, company, department, avatar, avatarHiddenText, list, snippet }}
             <div class="period">
                 <SlideInViewport>
                     <h3 class="period-name">{period}</h3>
@@ -21,10 +21,7 @@
                     <h3>{title}</h3>
                     <h4>{company}</h4>
                     {#if department}
-                        <h5>{department}</h5>
-                    {/if}
-                    {#if caption}
-                        <h6 class="caption">{caption}</h6>
+                        <h5 class="department">{department}</h5>
                     {/if}
                     {#if list}
                         <ul class="main-list">
@@ -98,13 +95,12 @@
 
    .description h3,
    .description h4,
-   .description h5,
-   .description h6 {
+   .description h5 {
         margin: 6px;
         font-weight: 400;
     }
 
-    .caption {
+    .department {
         color: var(--color-secondary);
     }
 
@@ -137,11 +133,6 @@
         color: var(--color-secondary);
         padding: 2px 4px;
         cursor: auto;
-    }
-
-    .tag:hover {
-        background-color: var(--color-secondary);
-        color: var(--color-text-white);
     }
 
    .content .avatar {
