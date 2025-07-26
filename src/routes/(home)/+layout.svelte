@@ -135,7 +135,7 @@
             "header"
             "main"
             "footer";
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: var(--header-height) auto max-content;
         background-color: var(--color-background-dark);
     }

@@ -74,7 +74,7 @@
         justify-content: center;
         column-gap: 10px;
         min-height: 100vh;
-        width: 100vw;
+        width: 100%;
         padding: 180px 32px;
         max-width: 1600px;
         box-sizing: border-box;

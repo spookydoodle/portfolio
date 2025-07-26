@@ -35,7 +35,7 @@
         grid-template-columns: 1fr;
         row-gap: 10px;
         position: fixed;
-        width: min(280px, 90vw);
+        width: min(280px, 90%);
         bottom: 20px;
         right: 20px;
         max-height: calc(100vh - 40px);

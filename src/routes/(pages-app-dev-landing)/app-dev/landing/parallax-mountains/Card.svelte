@@ -39,7 +39,7 @@
     .card {
         margin: 12px 24px;
         width: 340px;
-        max-width: calc(100vw - 48px);
+        max-width: calc(100% - 48px);
     }
 
     .img-container {

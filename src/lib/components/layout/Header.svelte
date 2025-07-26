@@ -106,7 +106,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
     }
 
     .menu ul {
@@ -145,7 +145,7 @@
     }
 
     @media only screen and (min-width: 600px) {
-        .nav a {
+        .nav a:not(:first-of-type) {
             display: initial;
         }
         .menu-icon {

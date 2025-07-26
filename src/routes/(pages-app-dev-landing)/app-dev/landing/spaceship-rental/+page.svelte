@@ -104,7 +104,7 @@
     .background,
     .background-front {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
         position: relative;
     }

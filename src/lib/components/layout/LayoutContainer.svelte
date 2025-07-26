@@ -14,7 +14,7 @@
         padding: 0;
         box-sizing: border-box;
         min-height: 100vh;
-        max-width: 100vw;
+        max-width: 100%;
         font-family:
             Karla,
             Roboto,
