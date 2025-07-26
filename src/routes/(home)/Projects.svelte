@@ -29,7 +29,6 @@
         justify-content: space-around;
         align-items: center;
         margin: 0 var(--side-width);
-        padding: 40px 20px;
         min-height: 100vh;
     }
 
@@ -86,6 +85,9 @@
         }
     }
     @media only screen and (min-width: 800px) {
+        .container {
+            padding: 40px 20px;
+        }
         .button {
             width: 350px;
             height: 350px;
