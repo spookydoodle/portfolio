@@ -203,7 +203,7 @@
     }
 
     .aside {
-        display: flex;
+        display: none;
         flex-direction: column;
         height: 100%;
         width: var(--side-width);
@@ -220,5 +220,11 @@
         height: 24px;
         --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2.5L8 7h8zm0 7.5a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2'/%3E%3C/svg%3E");
         background-color: var(--color-secondary);
+    }
+
+    @media only screen and (min-width: 800px) {
+        .aside {
+            display: flex;
+        }
     }
 </style>
