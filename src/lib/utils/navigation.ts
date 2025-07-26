@@ -19,7 +19,6 @@ export function scrollToAnchor(
    href: string,
 ) {
     const updateUrl = () => {
-        console.log("update url", href)
         goto(new URL(href).toString());
         document.removeEventListener("scrollend", updateUrl);
     };
@@ -27,7 +26,6 @@ export function scrollToAnchor(
 
     const anchorId = new URL(href).hash.replace("#", "");
     const anchor = document.getElementById(anchorId);
-    console.log({anchorId, top: anchor?.offsetTop})
     window.scrollTo({
         top: anchor?.offsetTop,
         behavior: "smooth",

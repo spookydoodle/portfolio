@@ -1,7 +1,6 @@
 <script lang="ts">
     import { page } from "$app/state";
     import { SitePath } from "$utils/pages";
-    console.log(page.state)
 </script>
 
 <div class="container">
