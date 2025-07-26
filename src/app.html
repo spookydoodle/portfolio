@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Dela+Gothic+One&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="spookydoodle" />
+    <meta name="description" content="spookydoodle portfolio" />
+
+    <meta name="og:image" content="https://res.cloudinary.com/spookydoodle/image/upload/main/doodles/avatar.jpg" />
+    <meta name="og:title" content="Full stack software engineer portfolio: spookydoodle" />
+    <meta name="og:description"
+        content="This is a full stack software engineer portfolio of spookydoodle ● TypeScript, GoLang, React, Svelte, PostgreSQL, MongoDB, Unity 3D, Blender 3D" />
+
+    <meta name="twitter:image" content="https://res.cloudinary.com/spookydoodle/image/upload/main/doodles/avatar.jpg" />
+    <meta name="twitter:title" content="Full stack software engineer portfolio: spookydoodle" />
+    <meta name="twitter:description"
+        content="This is a full stack software engineer portfolio of spookydoodle ● TypeScript, GoLang, React, Svelte, PostgreSQL, MongoDB, Unity 3D, Blender 3D" />
+
+    <link rel="apple-touch-icon" href="%sveltekit.assets%/logo192.png" />
+    <link rel="manifest" href="public/manifest.json" />
+    <title>Welcome to my world</title>
+
+    %sveltekit.head%
+
+    <!-- duplication with svelte.dev/static/shared.css needed, else styles aren't applied during local dev -->
+    <link rel="stylesheet" href="/shared.css" />
+</head>
+
+<body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>
