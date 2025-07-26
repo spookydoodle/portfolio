@@ -162,7 +162,7 @@
 
     .chart {
         display: grid;
-        grid-template-columns: 180px max-content;
+        grid-template-columns: minmax(140px, 180px) max-content;
         column-gap: 10px;
         align-items: center;
     }

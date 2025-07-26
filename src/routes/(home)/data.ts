@@ -353,7 +353,7 @@ export const data: Data = {
             ],
             backend: [
                 {
-                    title: "Node.js, Express.js",
+                    title: "Node, Express",
                     level: 4,
                     rating: 6,
                     reaction: {
@@ -380,7 +380,16 @@ export const data: Data = {
                     }
                 },
                 {
-                    title: "PostgreSQL, MongoDB",
+                    title: "PostgreSQL",
+                    level: 3,
+                    rating: 7,
+                    reaction: {
+                        lower: "It's nice, come on.",
+                        higher: "I get where you're coming from."
+                    }
+                },
+                {
+                    title: "MongoDB",
                     level: 3,
                     rating: 7,
                     reaction: {
@@ -398,7 +407,7 @@ export const data: Data = {
                     }
                 },
                 {
-                    title: "AWS, Azure, Terraform",
+                    title: "AWS, Azure",
                     level: 1,
                     rating: 2,
                     reaction: {
