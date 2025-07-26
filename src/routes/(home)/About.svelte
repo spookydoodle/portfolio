@@ -1,13 +1,14 @@
 <script lang="ts">
     import { PulsingArrow, SlideInViewport } from "$components";
     import { handleAnchorClick } from "$utils/navigation";
+    import { MainAnchors } from "$utils/pages";
     import type { AboutDataItem } from "./data";
 
     let { data }: { data: AboutDataItem[] } = $props();
     let container: HTMLDivElement;
 </script>
 
-<div id="about" bind:this={container} class="container">
+<div id={MainAnchors.About} bind:this={container} class="container">
     <SlideInViewport>
         <h3>Full stack software engineer.</h3>
         <div class="description">
@@ -23,7 +24,7 @@
             {/each}
         </div>
         <div class="arrow-container" title="Scroll to timeline">
-            <a href="#timeline" onclick={handleAnchorClick} class="arrows">
+            <a href={"#" + MainAnchors.Timeline} onclick={handleAnchorClick} class="arrows">
                 {#each [null, null, null] as _, i}
                     <PulsingArrow
                         animation="pulse-opacity"

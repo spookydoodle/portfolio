@@ -110,7 +110,7 @@
         <div class="aside">
             {#if showScrollToTopIcon}
                 <a
-                    href="#intro"
+                    href={"#" + MainAnchors.Intro}
                     aria-label="Scroll to top"
                     title="Scroll to top"
                     class="scroll-to-top"
@@ -130,13 +130,6 @@
 
 <style>
     :global(.home-layout) {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: var(--header-height) auto max-content;
         background-color: var(--color-background-dark);
     }
     :global(.home-layout h1),

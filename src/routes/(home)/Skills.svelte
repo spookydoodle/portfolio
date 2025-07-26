@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Rating } from "$components";
     import { addToast } from "$lib/store/toasts";
+    import { MainAnchors } from "$utils/pages";
     import type { SkillsData, SkillsDataItem } from "./data";
 
     let { data }: { data: SkillsData } = $props();
@@ -31,7 +32,7 @@
     };
 </script>
 
-<div id="skills" class="container">
+<div id={MainAnchors.Skills} class="container">
     <h2 class="header">{data.title}</h2>
     <p class="subheader">
         favorite <span class={["icon", "good-icon"]}></span> -
@@ -115,7 +116,7 @@
     
     .caption {
         text-align: center;
-        color: var(--color-secondary);
+        color: var(--color-secondary-dark);
     }
 
     .subheader {

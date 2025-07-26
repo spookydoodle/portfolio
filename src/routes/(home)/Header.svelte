@@ -3,6 +3,7 @@
     import { handleAnchorClick } from "$utils/navigation";
     import { onMount } from "svelte";
     import type { IntroData } from "./data";
+    import { MainAnchors } from "$utils/pages";
 
     let { data }: { data: IntroData } = $props();
     let startTypewriting = $state(false);
@@ -55,7 +56,7 @@
     });
 </script>
 
-<header id="intro" class="container">
+<header id={MainAnchors.Intro} class="container">
     <div class="spacer"></div>
     <div class="avatar">
         <SpringImage
@@ -83,7 +84,7 @@
         </h2>
     </div>
     <div class="arrow-container" title="Scroll to about">
-        <a href="#about" onclick={handleAnchorClick}>
+        <a href={"#" + MainAnchors.About} onclick={handleAnchorClick}>
             <PulsingArrow animation="pulse-partial-opacity" />
         </a>
     </div>

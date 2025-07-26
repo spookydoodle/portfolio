@@ -1,10 +1,11 @@
 <script lang="ts">
+    import { MainAnchors } from "$utils/pages";
     import type { ProjectsDataItem } from "./data";
 
     let { data }: { data: ProjectsDataItem[] } = $props();
 </script>
 
-<div id="projects" class="container">
+<div id={MainAnchors.Projects} class="container">
     {#each data as item}
         <a href={item.href}>
             <div class="button">

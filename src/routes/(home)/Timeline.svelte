@@ -1,11 +1,12 @@
 <script lang="ts">
     import { SpringImage, SlideInViewport } from "$components";
+    import { MainAnchors } from "$utils/pages";
     import type { TimelineDataItem } from "./data";
 
     let { data }: { data: TimelineDataItem[] } = $props();
 </script>
 
-<div id="timeline">
+<div id={MainAnchors.Timeline}>
     <SlideInViewport>
         <h2 class="header">Timeline</h2>
     </SlideInViewport>
@@ -18,7 +19,7 @@
             </div>
             <div class="description">
                 <SlideInViewport>
-                    <h3>{title}</h3>
+                    <h3 class="title">{title}</h3>
                     <h4>{company}</h4>
                     {#if department}
                         <h5 class="department">{department}</h5>
@@ -97,11 +98,15 @@
    .description h4,
    .description h5 {
         margin: 6px;
+    }
+    
+   .description h4,
+   .description h5 {
         font-weight: 400;
     }
 
     .department {
-        color: var(--color-secondary);
+        color: var(--color-secondary-dark);
     }
 
    .description .main-list > li p {
@@ -123,14 +128,16 @@
 
     .tags {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         column-gap: 4px;
+        row-gap: 2px;
     }
     
     .tag {
         border-radius: 4px;
-        border: 1px solid var(--color-secondary);
-        color: var(--color-secondary);
+        border: 1px solid var(--color-secondary-dark);
+        color: var(--color-secondary-dark);
         padding: 2px 4px;
         cursor: auto;
     }
