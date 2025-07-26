@@ -26,6 +26,7 @@
         row-gap: 30px;
         column-gap: 30px;
         flex-wrap: wrap;
+        padding: 40px 0px;
         justify-content: space-around;
         align-items: center;
         margin: 0 var(--side-width);
