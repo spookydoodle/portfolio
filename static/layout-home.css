@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "side-nav main aside"
+        "side-nav footer aside";
+    grid-template-columns: var(--side-width) auto var(--side-width);
+    grid-template-rows: var(--header-height) auto max-content;
+    min-height: 100vh;
+}
