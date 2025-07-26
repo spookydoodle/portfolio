@@ -93,7 +93,7 @@
         animation: no-transform 0.2s 0.2s cubic-bezier(0, 0.5, 0, 1) forwards;
     }
 
-    .nav > a {
+    .nav > a:not(:first-of-type) {
         display: none;
     }
 

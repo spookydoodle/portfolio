@@ -24,7 +24,6 @@ export interface TimelineDataItem {
     title: string;
     company: string;
     department?: string;
-    caption?: string;
     avatar: string;
     avatarHiddenText: string;
     list?: {
@@ -54,8 +53,6 @@ export interface SkillsDataItem {
 
 export interface SkillsData {
     title: string;
-    subtitleBad: string;
-    subtitleGood: string;
     note: string;
     skills: {
         frontend: SkillsDataItem[];
@@ -107,7 +104,6 @@ export const data: Data = {
             title: "Software Engineer",
             company: "A geolocation, maps and traffic services company",
             department: "Traffic and Travel Information department",
-            caption: "Full stack development",
             avatar: "https://res.cloudinary.com/spookydoodle/image/upload/main/doodles/nav.jpg",
             avatarHiddenText: "Vroom!",
             list: [
@@ -117,7 +113,7 @@ export const data: Data = {
                         "- Allows internal teams to easily add their development tools and product visualization layers;",
                         "- Implements workflows for internal and B2B partner teams which add content to existing solutions;",
                         "- Enables potential customers to evaluate products and close the deal;",
-                        "It's veery naaays."
+                        "<i>It's the coolest app I've ever worked on so far.</i>"
                     ],
                     frameworks: {
                         frontend: ["React.js", "MapLibre", "D3.js", "Rspack"],
@@ -132,14 +128,14 @@ export const data: Data = {
                     },
                 },
                 {
-                    paragraphs: ["Co-created an extensive custom UI library from scratch."],
+                    paragraphs: ["Developed an extensive custom UI library from scratch."],
                     frameworks: {
                         frontend: ["Storybook"],
                     },
                 },
                 {
                     paragraphs: [
-                        `Improved upon the Origin-Destination Matrix Analysis application with statistics of trips taken between freely selected regions and time frames.`,
+                        "Worked on an application visualising travel patterns between freely selected origin and destination regions in chosen time frames.",
                     ],
                     frameworks: {
                         frontend: ["TypeScript", "React.js", "Mapbox"],
@@ -157,10 +153,19 @@ export const data: Data = {
             title: "Senior Business Intelligence Developer",
             company: "A fashion company",
             department: "Analytics & Business Intelligence department",
-            caption: "Sales, finance and merchandise data visualisation applications",
             avatar: "https://res.cloudinary.com/spookydoodle/image/upload/main/doodles/fashion.jpg",
             avatarHiddenText: "Fab",
             list: [
+                {
+                    paragraphs: [
+                        "I was responsible for creating data visualisation dashboards for sales, design and merchandise planning teams.",
+                        "<i>They sliced. And they diced. All thanks to me.</i>"
+                    ],
+                    frameworks: {
+                        frontend: ["Tableau"],
+                        backend: ["SAP BW", "SAP HANA"],
+                    },
+                },
                 {
                     paragraphs: [
                         `Created an automated KPI slideshow, like the
@@ -176,23 +181,13 @@ export const data: Data = {
                             rel="noopener noreferrer"><b>dataviz example</b></a
                         >.`,
                         "Initially designed for TV screens, its intention was to provide insight into the current performance of the company.", 
-                        "Also offers a mobile version. It's pretty cool. I think.",
+                        "Also offered a mobile version - where Spotify meets Trading212.", 
+                        "<i>It's pretty cool. I think.</i>",
                     ],
                     frameworks: {
                         frontend: ["TypeScript", "React.js"],
                         backend: ["SAP BW", "Node.js"],
                         infra: ["GitLab CI/CD", "nginx", "AWS EC2, Fargate"],
-                    },
-                },
-                {
-                    paragraphs: [
-                        `<b>Sell Out Analytics Platform</b> for merchandise planning, design
-                        and retail teams. A dashboard with many views aggregating, slicing
-                        and dicing sales data.`,
-                    ],
-                    frameworks: {
-                        frontend: ["Tableau"],
-                        backend: ["SAP BW", "SAP HANA"],
                     },
                 },
             ],
@@ -207,10 +202,9 @@ export const data: Data = {
             list: [
                 {
                     paragraphs: [
-                        `Integration of global transactional ERP systems of the
-                        organization and data visualization of sales, marketing and
-                        finance data.`,
-                        "The company was very impressive but looking back at the tooling I had to work with... they win the prize for the most awful, closed off technologies ever."
+                        "Helped with integrating more than 60 local transactional ERP systems into one global Business Warehouse.",
+                        "And visualised sales & finance data.",
+                        "<i>The company was very impressive but looking back at the tooling I had to work with... they win the prize for the most awful, closed off technologies ever.</i>"
                     ],
                     frameworks: {
                         frontend: ["SAP BO"],
@@ -228,10 +222,8 @@ export const data: Data = {
             list: [
                 {
                     paragraphs: [
-                        `First level IT support to an international client by handling
-                        incoming phone calls and e-mails from users regarding technical
-                        issues with: hardware, software and network.`,
-                        "Well, we all have to start somewhere...",
+                        `First level IT support to an international client.`,
+                        "<i>Wanna reset your... procurement form? Let's escalate.</i>",
                     ],
                 },
             ],
@@ -255,9 +247,7 @@ export const data: Data = {
         },
     ],
     skills: {
-        title: "Stuff I can use",
-        subtitleBad: 'necessary evil',
-        subtitleGood: 'source of joy',
+        title: "Stuff I use",
         note: "Feel free to click and disagree.",
         skills: {
             frontend: [
@@ -281,7 +271,7 @@ export const data: Data = {
                 },
                 {
                     title: "Svelte",
-                    level: 3,
+                    level: 4,
                     rating: 9,
                     reaction: {
                         lower: "Let's agree to disagree. I think we should keep as close as what it all ends up being eventually.",
@@ -417,7 +407,16 @@ export const data: Data = {
                     }
                 },
                 {
-                    title: "nginx, Docker, Kubernetes",
+                    title: "nginx, Docker",
+                    level: 2,
+                    rating: 4,
+                    reaction: {
+                        lower: "Yeah.",
+                        higher: "Wow, ok."
+                    }
+                },
+                {
+                    title: "Kubernetes",
                     level: 1,
                     rating: 1,
                     reaction: {
