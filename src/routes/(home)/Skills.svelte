@@ -97,7 +97,7 @@
     .container {
         background-color: var(--color-background-light);
         margin: 0 auto;
-        padding: 80px var(--side-width) 100px var(--side-width);
+        padding: 80px 20px 100px 20px;
         position: relative;
     }
 
@@ -106,14 +106,14 @@
         margin: 0;
     }
 
-    .subheader{
+    .subheader {
         text-align: center;
         color: var(--color-primary);
     }
     .subheader:first-of-type {
         padding-left: 45px;
     }
-    
+
     .caption {
         text-align: center;
         color: var(--color-secondary-dark);
@@ -184,5 +184,11 @@
 
     .good-icon {
         --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='m256 448l-9-6c-42.78-28.57-96.91-60.86-137-108.32c-42.25-50-62.52-101.35-62-157C48.63 114.54 98.46 64 159.08 64c48.11 0 80.1 28 96.92 48.21C272.82 92 304.81 64 352.92 64c60.62 0 110.45 50.54 111.08 112.65c.56 55.68-19.71 107-62 157c-40.09 47.49-94.22 79.78-137 108.35Z'/%3E%3C/svg%3E");
+    }
+
+    @media only screen and (min-width: 800px) {
+        .container {
+            padding: 80px var(--side-width) 100px var(--side-width);
+        }
     }
 </style>

@@ -96,44 +96,43 @@
         flex-direction: column;
         row-gap: 30px;
         flex-wrap: wrap;
-        margin: 0 var(--side-width);
         justify-content: center;
         align-items: center;
-        padding: 40px 30px;
+        padding: 40px 20px;
         box-sizing: border-box;
         min-height: calc(100vh - var(--header-height));
     }
 
-     .spacer {
+    .spacer {
         flex-basis: 100%;
         height: 36px;
         box-sizing: border-box;
         margin-bottom: auto;
     }
 
-     .avatar {
+    .avatar {
         width: 160px;
         height: 160px;
     }
 
-     .titles {
+    .titles {
         flex-grow: 0.1;
     }
 
-     .titles .title {
+    .titles .title {
         font-size: 48px;
         margin: 18px 0;
         min-height: 56px;
     }
 
-     .titles .subtitle {
+    .titles .subtitle {
         color: var(--color-secondary);
         font-size: 32px;
         margin: 16px 0;
         min-height: 38px;
     }
 
-     .arrow-container {
+    .arrow-container {
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
@@ -149,26 +148,28 @@
         .container {
             flex-direction: row;
             column-gap: 12%;
+            padding: 40px 30px;
+            margin: 0 var(--side-width);
         }
 
-         .titles {
+        .titles {
             flex-grow: 0.1;
             width: 550px;
         }
 
-         .titles .title {
+        .titles .title {
             font-size: 72px;
             margin: 18px 0;
             min-height: 85px;
         }
 
-         .titles .subtitle > span {
+        .titles .subtitle > span {
             font-size: 48px;
             margin: 16px 0;
             min-height: 56px;
         }
 
-         .avatar {
+        .avatar {
             width: 220px;
             height: 220px;
         }

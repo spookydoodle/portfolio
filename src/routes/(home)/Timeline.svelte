@@ -91,7 +91,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 80px 40px 80px 60px;
+        padding: 80px 20px;
     }
 
    .description h3,

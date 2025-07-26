@@ -24,7 +24,11 @@
             {/each}
         </div>
         <div class="arrow-container" title="Scroll to timeline">
-            <a href={"#" + MainAnchors.Timeline} onclick={handleAnchorClick} class="arrows">
+            <a
+                href={"#" + MainAnchors.Timeline}
+                onclick={handleAnchorClick}
+                class="arrows"
+            >
                 {#each [null, null, null] as _, i}
                     <PulsingArrow
                         animation="pulse-opacity"
@@ -41,8 +45,8 @@
 <style>
     .container {
         min-height: 100vh;
-        padding: 0 50px 0 70px;
         margin: 0 auto;
+        padding: 0 20px 0 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -92,6 +96,7 @@
     @media only screen and (min-width: 800px) {
         .container {
             width: min(600px, calc(100% - 160px));
+            padding: 0 50px 0 70px;
         }
 
         .description {

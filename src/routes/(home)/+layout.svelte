@@ -20,7 +20,7 @@
 
     const navItems: { title: string; href: string }[] = [
         { title: "Home", href: "#" + MainAnchors.Intro },
-        { title: "About", href: "#" + MainAnchors.About},
+        { title: "About", href: "#" + MainAnchors.About },
         { title: "Timeline", href: "#" + MainAnchors.Timeline },
         { title: "Skills", href: "#" + MainAnchors.Skills },
         { title: "Projects", href: "#" + MainAnchors.Projects },
@@ -146,7 +146,7 @@
 
     .header-spacer {
         width: 40px;
-        display: block;
+        display: none;
     }
 
     .side-nav-container {
@@ -184,6 +184,11 @@
 
     @media only screen and (min-width: 550px) and (min-height: 450px) {
         .side-nav-container {
+            display: block;
+        }
+    }
+    @media only screen and (min-width: 550px) {
+        .header-spacer {
             display: block;
         }
     }
