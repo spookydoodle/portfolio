@@ -3,10 +3,12 @@
         rating,
         changed,
         onClick,
+        opacity,
     }: {
         rating: number;
         changed: boolean;
         onClick?: (rating: number) => void;
+        opacity?: string;
     } = $props();
     let hoveredRating = $state(0);
 
@@ -17,6 +19,7 @@
     role="listitem"
     class="hearts-row"
     onmouseleave={() => (hoveredRating = 0)}
+    style:opacity={opacity}
 >
     {#each [1, 2, 3, 4, 5] as index}
         <span class="heart">
