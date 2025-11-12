@@ -30,6 +30,9 @@
         if (rating <= maxRating / 2 && level > maxLevel / 2) return "but";
         return "and";
     };
+    const getOpacity = (item: SkillsDataItem) => {
+        return `${(0.3 + (item.level / maxLevel)).toFixed(2)}`;
+    }
 </script>
 
 <div id={MainAnchors.Skills} class="container">
@@ -59,7 +62,7 @@
                 <div class="chart">
                     {#each chart.toSorted((a, b) => b.level - a.level) as item}
                         <p
-                            style:opacity={`${(0.2 + (item.level / maxLevel) * 0.8).toFixed(2)}`}
+                            style:opacity={getOpacity(item)}
                             title={`My sentiment on ${item.title} is ${sentiment(item.rating)} ${separator(item.level, item.rating)} I am ${confidence(item.level)}.`}
                         >
                             {item.title}
@@ -85,6 +88,7 @@
                                               : item.reaction.lower,
                                 });
                             }}
+                            opacity={getOpacity(item)}
                         />
                     {/each}
                 </div>

@@ -81,7 +81,7 @@ export const data: Data = {
                 "High throughput.",
                 "Focus on what matters...",
                 "...and sometimes on what's simply just fun.",
-                '<i>Get things done" & "agree and commit</i> attitude.',
+                '<i>"Get things done" & "agree and commit"</i> attitude.',
                 "Ego-free collaborative approach, thorough code reviews.",
                 "Backlog involvement & regular tech-debt payments.",
             ],
@@ -408,8 +408,8 @@ export const data: Data = {
                 },
                 {
                     title: "AWS, Azure",
-                    level: 1,
-                    rating: 2,
+                    level: 2,
+                    rating: 3,
                     reaction: {
                         lower: "Perfectly acceptable.",
                         higher: "I'm glad there is someone who will do this job for me."
@@ -427,7 +427,7 @@ export const data: Data = {
                 {
                     title: "Kubernetes",
                     level: 1,
-                    rating: 1,
+                    rating: 3,
                     reaction: {
                         lower: "I completely understand your view on this.",
                         higher: "I'm glad there is someone who will do this job for me."
